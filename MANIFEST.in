@@ -1,0 +1,2 @@
+include lavender_sscc/features_pca.npy
+include lavender_sscc/ccs.txt

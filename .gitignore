@@ -1,0 +1,5 @@
+*.DS_Store
+/src/images_48x48
+*__pycache__
+*.vscode
+/dist

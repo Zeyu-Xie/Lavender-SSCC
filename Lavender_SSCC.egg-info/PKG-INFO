@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: Lavender-SSCC
+Version: 0.0.4
+Summary: A pip package to calculate similarity in shape among Chinese characters.
+Home-page: https://github.com/Zeyu-Xie/Lavender-SSCC
+Author: Zeyu Xie
+Author-email: xie.zeyu20@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: scikit-learn>=1.6.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Lavender-SSCC
+
+A pip package to calculate similarity in shape among Chinese characters.
