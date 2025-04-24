@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="Lavender-SSCC",
-    version="0.0.4",
+    version="0.0.5",
     description="A pip package to calculate similarity in shape among Chinese characters.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
