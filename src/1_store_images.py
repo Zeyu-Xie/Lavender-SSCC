@@ -10,7 +10,7 @@ size = 48
 # Paths
 ccs_path = os.path.join(os.path.dirname(__file__), "ccs.txt")
 images_dir = os.path.join(os.path.dirname(__file__), f"images_{size}x{size}")
-font_path = os.path.join(os.path.dirname(__file__), "STHeiti_Medium.ttc")
+font_path = os.path.join(os.path.dirname(__file__), "fonts", "SourceHanSerif-VF.ttc")
 if not os.path.exists(images_dir):
     os.makedirs(images_dir, exist_ok=True)
 
@@ -27,7 +27,15 @@ def char_to_image_simple(ch):
     image = Image.new("L", (size, size), color=255)
     draw = ImageDraw.Draw(image)
     font = ImageFont.truetype(font_path, size)
-    draw.text((0, 0), ch, fill=0, font=font)
+
+    bbox = draw.textbbox((0, 0), ch, font=font)
+    w = bbox[2] - bbox[0]
+    h = bbox[3] - bbox[1]
+
+    x = (size - w) // 2 - bbox[0]
+    y = (size - h) // 2 - bbox[1]
+
+    draw.text((x, y), ch, fill=0, font=font)
     return image
 
 
