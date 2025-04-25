@@ -1,11 +1,8 @@
-from lavender_sscc.distance import similarity_between
-from importlib import resources
+from lavender_sscc import similarity_between
 import numpy as np
 import os
 import pandas as pd
-from sklearn.metrics.pairwise import cosine_similarity
 from tqdm import tqdm
-
 
 # Paths
 ccs_path = os.path.join(os.path.dirname(__file__), "ccs.txt")
