@@ -10,5 +10,6 @@ Lavender_SSCC.egg-info/requires.txt
 Lavender_SSCC.egg-info/top_level.txt
 lavender_sscc/__init__.py
 lavender_sscc/ccs.txt
-lavender_sscc/distance.py
 lavender_sscc/features_pca.npy
+lavender_sscc/main.py
+lavender_sscc/top_sccs.csv
